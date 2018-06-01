@@ -1,32 +1,15 @@
-# def running_guessing_game
-#   generate_number = rand(1..6)
-#
-#
-#   puts "Guess a number between 1 and 6."
-#   guessed_num = gets.chomp
-#   if generate_number == guessed_num
-#     puts "You guessed the correct number!"
-#   elsif generate_number == "exit"
-#     return "out"
-#   end
-# end
-
-def generated_number
-  rand(1..6)
-end
-
-def user_guess
-  gets.chomp
-end
-
 def running_guessing_game
-  generated_number
+  loop do
   puts "Guess a number between 1 and 6."
-  if generated_number == user_guess
-    "You guessed the correct number!"
-  elsif generated_number != user_guess
-    "The computer guessed #{generated_number}"
-  elsif user_guess == "exit"
-    break
+  generated_num = rand(1..6)
+  user_input = gets.chomp
+    if user_input == "exit"
+
+      return puts "Thanks for playing! bye bye!"
+    elsif user_input.to_i == generated_num
+      puts "You guessed the correct number!"
+    else
+      puts "The computer guessed #{generated_num}"
+    end
   end
 end
