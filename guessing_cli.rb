@@ -1,4 +1,4 @@
-def running_guessing_game
+def run_guessing_game
   loop do
   puts "Guess a number between 1 and 6."
   generated_num = rand(1..6)
