@@ -7,7 +7,6 @@ def running_guessing_game
   if generate_number == guessed_num
     puts "You guessed the correct number!"
   elsif generate_number == "exit"
-    return
-    end
+    return "out"
   end
 end
