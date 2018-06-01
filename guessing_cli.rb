@@ -8,6 +8,7 @@ loop do
       break
     elsif user_input != generated_num
       puts "The computer guessed #{generated_num}"
+      break
     elsif user_input == generated_num
       puts "You guessed the correct number!"
     end
