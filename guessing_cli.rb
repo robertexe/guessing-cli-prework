@@ -7,8 +7,7 @@ loop do
       puts "Goodbye!"
       break
     elsif user_input != generated_num
-      puts "The computer guessed #{generated_num}"
-      break
+      puts "The computer guessed #{generated_num}."
     elsif user_input == generated_num
       puts "You guessed the correct number!"
     end
